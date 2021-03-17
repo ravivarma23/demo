@@ -1,0 +1,17 @@
+stages:
+- compile
+- test
+
+build:
+  stage: compile
+  #image: gladiators
+  script:
+  - 'echo Hello World'
+  allow_failure: true
+  
+  
+test:
+  stage: test
+  script:
+  - 'echo test success'
+  
